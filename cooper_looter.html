@@ -36,7 +36,7 @@ h,f,f,f,f,f,j,0,c,0,d,b,c,0,d,b
 f,f,g,f,f,f,k,0,0,b,0,0,0,b,0,0
 f,f,f,f,g,f,k,0,0,0,0,q,0,0,q,0
 f,f,f,f,f,f,k,0,q,0,0,0,0,0,0,0
-f,g,f,f,f,f,k,0,0,0,0,0,0,q,0,0
+f,g,f,f,f,f,k,0,0,0,0,s,0,q,0,0
 i,i,i,i,i,i,l,m,m,m,m,m,m,m,m,m
 a,0,0,0,a,a,0,0,0,0,0,0,0,0,e,0
 a,a,a,a,a,a,a,a,0,0,e,0,n,o,0,0
@@ -49,15 +49,15 @@ a,a,a,a,0,a,a,a,0,0,0,0,0,0,e,0
 a,0,a,0,a,a,a,0,0,0,0,0,0,0,0,0
 a,a,0,0,0,a,a,0,0,n,o,0,0,0,n,o
 NAME Entrance
-EXT 15,6 1 0,7 FX wave
-EXT 15,7 1 0,7 FX wave
-EXT 15,8 1 0,7 FX wave
-EXT 15,9 1 0,7 FX wave
-EXT 15,10 1 0,7 FX wave
-EXT 15,11 1 0,7 FX wave
-EXT 15,12 1 0,7 FX wave
-EXT 15,13 1 0,7 FX wave
-EXT 15,14 1 0,7 FX wave
+EXT 15,6 4 0,10 FX tunnel
+EXT 15,7 4 0,10 FX tunnel
+EXT 15,8 4 0,10 FX tunnel
+EXT 15,9 4 0,10 FX tunnel
+EXT 15,10 4 0,10 FX tunnel
+EXT 15,11 4 0,10 FX tunnel
+EXT 15,12 4 0,10 FX wave
+EXT 15,13 4 0,10 FX tunnel
+EXT 15,14 4 0,10 FX tunnel
 PAL 0
 TUNE 2
 
@@ -66,7 +66,7 @@ c,0,d,b,c,0,d,b,c,0,d,b,c,0,d,b
 0,b,0,0,0,b,0,0,0,b,0,0,0,b,0,0
 0,0,0,0,0,0,0,q,0,0,0,0,0,0,0,0
 0,0,q,0,0,0,0,0,0,0,0,0,q,0,0,0
-0,0,0,0,0,q,0,0,0,q,0,0,0,0,0,0
+0,0,0,0,s,q,0,0,0,q,0,s,0,0,0,0
 m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m
 p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,p
@@ -82,7 +82,9 @@ NAME Maze
 ITM 2 8,14
 ITM 2 2,10
 ITM 2 14,8
-EXT 15,15 3 1,9 FX wave DLG 6
+ITM 3 3,14
+ITM 3 13,12
+EXT 15,15 3 1,9 FX tunnel DLG 6
 PAL 0
 TUNE 3
 
@@ -91,7 +93,7 @@ c,0,d,b,c,0,d,b,c,0,d,b,c,0,d,b
 0,b,0,0,0,b,0,0,0,b,0,0,0,b,0,0
 0,0,0,q,0,0,0,q,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,q,0,0
-0,q,0,0,0,0,0,0,0,q,0,0,0,0,0,0
+0,q,0,0,s,0,0,0,0,q,0,s,0,0,0,0
 m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,n,o,0,0,0,e,0,0,0,n,o,0,0
@@ -106,6 +108,74 @@ m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m
 NAME Chew toy Room
 ITM 0 8,10
 END 7 2,2
+PAL 0
+TUNE 3
+
+ROOM 4
+c,0,d,b,c,0,d,b,c,0,d,b,c,0,d,b
+0,b,0,0,0,b,0,0,0,b,0,0,0,b,0,0
+0,0,0,q,0,0,0,q,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,q,0,0
+0,q,0,0,s,0,0,0,0,q,0,s,0,0,0,0
+m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m
+0,0,0,0,e,e,0,0,0,0,0,p,p,p,p,p
+0,n,o,0,0,0,0,0,0,0,0,0,p,p,p,p
+0,0,0,0,0,n,o,0,0,0,0,0,0,p,p,p
+0,0,0,0,0,0,0,0,e,0,0,e,0,0,p,p
+0,0,0,0,0,0,0,e,0,0,0,0,0,0,0,0
+0,e,e,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,n,o,0,e,0,0,0,p,p
+0,0,0,0,e,0,0,0,0,0,e,0,0,p,p,p
+0,n,o,0,0,e,0,0,0,0,0,0,p,p,p,p
+0,0,0,0,0,0,0,0,0,0,0,p,p,p,p,p
+NAME Cave Room (with slime)
+END 7 2,2
+PAL 0
+TUNE 3
+
+ROOM 5
+c,0,d,b,c,0,d,b,c,0,d,b,c,0,d,b
+0,b,0,0,0,b,0,0,0,b,0,0,0,b,0,0
+0,0,0,q,0,0,0,q,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,q,0,0
+0,q,0,0,s,0,0,0,0,q,0,s,0,0,0,0
+m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m
+0,0,0,0,0,0,0,q,q,q,0,0,0,0,0,0
+0,0,0,0,0,0,0,q,0,q,0,0,0,0,0,0
+0,0,0,0,0,0,0,q,q,q,0,0,0,0,0,0
+p,p,p,p,p,p,p,p,r,p,p,p,p,p,p,p
+p,p,p,p,0,0,0,0,0,p,p,0,p,p,p,p
+p,p,0,0,0,p,p,p,p,p,p,0,0,0,p,p
+p,0,0,p,p,p,p,p,p,p,p,p,p,0,p,p
+p,0,p,p,p,0,0,0,0,0,0,p,0,0,p,p
+p,0,0,0,0,0,p,p,0,p,0,0,0,p,p,p
+p,p,p,p,p,p,p,p,0,p,p,p,p,p,p,p
+NAME Sword Room
+ITM 4 8,7
+END 7 2,2
+PAL 0
+TUNE 3
+
+ROOM 6
+c,0,d,b,c,0,d,b,c,0,d,b,c,0,d,b
+0,b,0,0,0,b,0,0,0,b,0,0,0,b,0,0
+0,0,0,q,0,0,0,q,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,q,0,0
+0,q,0,0,s,0,0,0,0,q,0,s,0,0,0,0
+m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m
+0,0,0,0,e,e,0,0,0,0,0,p,p,p,p,p
+0,n,o,0,0,0,0,0,0,0,0,0,p,p,p,p
+0,0,0,0,0,n,o,0,0,0,0,0,0,p,p,p
+0,0,0,0,0,0,0,0,e,0,0,e,0,0,p,p
+0,0,0,0,0,0,0,e,0,0,0,0,0,0,0,0
+0,e,e,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,n,o,0,e,0,0,0,p,p
+0,0,0,0,e,0,0,0,0,0,e,0,0,p,p,p
+0,n,o,0,0,e,0,0,0,0,0,0,p,p,p,p
+0,0,0,0,0,0,0,0,0,0,0,p,p,p,p,p
+NAME Cave Room (without slime)
+EXT 15,10 1 0,7 FX tunnel
+EXT 15,11 1 0,7 FX tunnel
 PAL 0
 TUNE 3
 
@@ -320,6 +390,38 @@ TIL q
 00000000
 NAME wall sparkles
 
+TIL r
+11111111
+10101010
+11111111
+10101010
+11111111
+10101010
+11111111
+10101010
+NAME fake wall
+WAL false
+
+TIL s
+00000000
+00000000
+00000000
+00001000
+00011000
+00111100
+00011000
+00011000
+>
+00000000
+00001000
+00001000
+00011000
+00011000
+00111100
+00011000
+00011000
+NAME torch
+
 SPR A
 00001000
 01000110
@@ -360,7 +462,7 @@ SPR a
 00100100
 NAME cat
 DLG 0
-POS 0 10,12
+POS 0 11,12
 BLIP 1
 
 SPR b
@@ -375,6 +477,110 @@ SPR b
 NAME door
 DLG 6
 POS 1 15,15
+
+SPR c
+00000000
+00000000
+00000000
+00111100
+01000010
+10101001
+10000001
+01111110
+>
+00000000
+00000000
+00111100
+01000010
+10101001
+10000001
+10000001
+01111110
+NAME slime
+DLG a
+POS 4 14,11
+
+SPR d
+00000000
+00000000
+00111100
+01000010
+10101001
+10000001
+10000001
+01111110
+>
+00000000
+00000000
+00000000
+00111100
+01000010
+10101001
+10000001
+01111110
+NAME slime 2
+DLG a
+POS 4 14,10
+
+SPR e
+00111100
+01111110
+01100110
+11000011
+11000011
+11000011
+11000011
+11000011
+NAME cave door 2
+DLG d
+POS 5 8,15
+
+SPR f
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+>
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+00100100
+NAME cat (sword room)
+DLG 8
+POS 5 11,10
+
+SPR g
+00111100
+01111110
+01100110
+11000011
+11000011
+11000011
+11000011
+11000011
+NAME cave door
+DLG c
+POS 4 8,5
+
+SPR h
+00111100
+01111110
+01100110
+11000011
+11000011
+11000011
+11000011
+11000011
+NAME cave door (decor)
+POS 6 8,5
 
 ITM 0
 00000000
@@ -418,6 +624,48 @@ ITM 2
 NAME key
 DLG 3
 
+ITM 3
+00000000
+00111000
+01111100
+00111000
+00010000
+00010000
+00011000
+00011000
+>
+00111000
+01111100
+00111000
+00010000
+00010000
+00110000
+00110000
+00000000
+NAME fake key
+DLG b
+
+ITM 4
+00000000
+00010000
+00010000
+00010000
+00010000
+01111100
+00010000
+00010000
+>
+00010000
+00010000
+00010000
+00010000
+01111100
+00010000
+00010000
+00000000
+NAME sword
+DLG 9
+
 DLG 0
 Cooper! You must obtain the {rbw}Mystical Chew Toy{/rbw}! Head to the right to enter the {shk}Cave Maze{/shk}!
 NAME cat dialog
@@ -458,6 +706,37 @@ NAME locked exit 1
 DLG 7
 The end
 NAME ending 1
+
+DLG 8
+ I can't believe they made a room in this cave with no door...{wvy}or is there?{/wvy}
+NAME fake wall clue
+
+DLG 9
+You got a sword! Show those slimes who's boss!{item "4" {{item "4"} + 1}}
+NAME sword dialog
+
+DLG a
+"""
+{
+  - {item "4"} <= 1 ?
+    You can't get past us. You don't even have a sword, {shk}mutt{/shk}.
+  - else ?
+    {shk}NOOOOOO!!!{/shk}{exit "6" 14 10}
+}
+"""
+NAME slime dialog
+
+DLG b
+You got a...{shk}fake key{/shk}?!?
+NAME fake key dialog
+
+DLG c
+{exit "5" 8 14 "tunnel"}
+NAME cave door dialog
+
+DLG d
+{exit "4" 8 6 "tunnel"}
+NAME cave door 2 dialog
 
 VAR a
 42
@@ -12288,6 +12567,7 @@ CHAR 9835
 011011
 011000
 000000
+</script>
 </script>
 
 </head>
